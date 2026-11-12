@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Tells the browser this is a modern HTML5 document -->
+<html lang="en">
+<!-- <html> is the root element; lang="en" says the page is in English -->
+
+<head>
+  <!-- <head> holds information ABOUT the page; it is not shown in the page body -->
+  <meta charset="UTF-8">
+  <!-- Character encoding, so accented letters (á, ő, ű) display correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the page scale properly on phones -->
+  <title>Máté Kristóf – Personal Page</title>
+  <!-- Text shown on the browser tab -->
+
+  <style>
+    /* CSS: controls how the HTML elements look */
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;   /* makes the image round */
+      object-fit: cover;
+    }
+    h1 { margin-bottom: 0; }
+    .subtitle { color: #555; margin-top: 4px; }
+  </style>
+</head>
+
+<body>
+  <!-- <body> holds everything that is visible on the page -->
+
+  <header>
+    <!-- <header>: the introductory section of the page -->
+    <img class="avatar" src="avatar.jpg" alt="Profile picture of Máté Kristóf">
+    <!-- <img>: shows an image. src = file path, alt = text shown if the image can't load (also read by screen readers) -->
+    <h1>Máté Kristóf</h1>
+    <!-- <h1>: the main (largest) heading. Use only one per page -->
+    <p class="subtitle">Strategic Project Management MSc · Corvinus University of Budapest · 1st year</p>
+    <!-- <p>: a paragraph of text -->
+  </header>
+
+  <main>
+    <!-- <main>: the main content of the page -->
+
+    <section>
+      <!-- <section>: groups related content under one heading -->
+      <h2>About me</h2>
+      <!-- <h2>: a second-level heading (sub-heading) -->
+      <p>
+        Hi! I'm Máté Kristóf, a first-year Master's student in Strategic Project Management at
+        Corvinus University of Budapest. I hold a Bachelor's degree in International
+        Business Economics from ELTE. I'm interested in how technology, data and good
+        project management can make businesses work better.
+      </p>
+    </section>
+
+    <section>
+      <h2>Program details</h2>
+      <ul>
+        <!-- <ul>: unordered (bulleted) list; each <li> is one list item -->
+        <li><strong>University:</strong> Corvinus University of Budapest</li>
+        <!-- <strong>: important text, shown in bold -->
+        <li><strong>Program:</strong> Strategic Project Management (MSc)</li>
+        <li><strong>Year of study:</strong> 1st year</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Photography and video making</li>
+        <li>Travelling</li>
+        <li>Building small side projects and apps</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <!-- <footer>: the closing section of the page -->
+    <p>Created for the Corvinus DevOps &amp; AI onboarding homework.</p>
+    <!-- &amp; is how you write the "&" character in HTML -->
+  </footer>
+
+</body>
+</html>
